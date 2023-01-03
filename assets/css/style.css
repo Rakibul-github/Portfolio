@@ -50,7 +50,7 @@ img{
     z-index: -1;
 }
 /* brand logo code  */
-.navbar-brand span{
+.navbar .navbar-brand span{
     color: #666;
     letter-spacing: .05em;
     text-transform: uppercase;
@@ -58,14 +58,14 @@ img{
     font-weight: 500;
     transition: .5s all;
 }
-.navbar-brand span:hover{
+.navbar .navbar-brand span:hover{
     color: #E7BC0B;
 }
 /* navbar socials-link code  */
-.socials-link{
+.navbar .socials-link{
     visibility: hidden;
 }
-.socials-link a{
+.navbar .socials-link a{
     display: block;
     width: 40px;
     height: 40px;
@@ -78,23 +78,23 @@ img{
     justify-content: center;
     align-items: center;
 }
-.socials-link a:hover{
+.navbar .socials-link a:hover{
     background: #fff;
     color: var(--main-color);
 }
-.nav-link {
+.navbar .nav-link {
     color: #fff;
     transition: .5s all;
 }
-.nav-link:focus, .nav-link:hover {
+.navbar .nav-link:focus, .nav-link:hover {
     color: var(--bs-nav-link-hover-color);
 }
 /* toggler code start  */
-.navbar-toggler{
+.navbar .navbar-toggler{
     color: rgba(255, 255, 255, .7);
     border-color: rgba(255, 255, 255, .3);
 }
-.navbar-toggler:focus {
+.navbar .navbar-toggler:focus {
     box-shadow: none;
 }
 /* medium device bg-style code  */
@@ -102,17 +102,17 @@ img{
     .navbar>.container{
         flex-direction: row-reverse;
     }
-    .socials-link{
+    .navbar .socials-link{
         visibility: visible;
     }
-    .nav-link {
+    .navbar .nav-link {
         text-transform: uppercase;
         letter-spacing: .05em;
         text-transform: uppercase;
         padding: 6px 0px;
         padding-right: 10px;
     }
-    .nav-link:hover {
+    .navbar .nav-link:hover {
         color: var(--bs-nav-link-hover-color);
         background: #E5E5E5;
     }
@@ -122,10 +122,10 @@ img{
     .navbar>.container{
         flex-direction: row-reverse;
     }
-    .socials-link{
+    .navbar .socials-link{
         visibility: visible;
     }
-    .navbar::before{
+    .navbar .navbar::before{
         position: absolute;
         content: '';
         top: 0;
@@ -140,3 +140,114 @@ img{
     }
 }
 /* ====nav-inner code end====*/
+
+/* ====header section code start====  */
+header{
+    background: #afafaf;
+}
+header .header-content{
+    position: relative;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 5px 5px 15px #333;
+    cursor: pointer;
+    transition: .5s all;
+}
+/* header content-inner title code start  */
+header .content-inner .title{
+    display: block;
+    position: relative;
+    margin-top: 5rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    z-index: 10;
+}
+header .content-inner .title::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 52%;
+    height: 100%;
+    background-color: #E7BC0B;
+    z-index: -10;
+}
+header .content-inner .title::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 6%;
+    height: 50%;
+    background-color: #000;
+    z-index: -5;
+}
+header .content-inner .title h1{
+    position: relative;
+    padding-top: 3rem;
+    font-size: 4rem;
+    color: #000;
+    font-weight: 500;
+    line-height: .7;
+    text-transform: uppercase;
+}
+header .content-inner .title span{
+    display: block;
+    font-size: 14px;
+    line-height: 3;
+    text-transform: capitalize;
+}
+/* .content-inner log code start  */
+.log h6{
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .1em;
+}
+.log p{
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.log a{
+    display: inline-block;
+    color: #777777;
+    font-size: 14px;
+    line-height: 0;
+    padding-bottom: 10px;
+    transition: .5s all;
+}
+.log a:hover{
+    color: rgb(116, 6, 66);
+}
+/* content-blog code start  */
+header .content-inner .content-blog{
+    padding-top: 5rem;
+    padding-left: 2rem;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+header .content-inner .content-blog::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #E7BC0B;
+    z-index: -10;
+}
+header .content-inner .content-blog::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 5%;
+    height: 40%;
+    background-color: #000;
+    z-index: -5;
+}
+/* ====header section code end====  */
