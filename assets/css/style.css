@@ -143,111 +143,190 @@ img{
 
 /* ====header section code start====  */
 header{
-    background: #afafaf;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../image/cover.jpg)no-repeat;
+    background-size: cover;
 }
-header .header-content{
+/* type-text code  */
+header .type-text{
     position: relative;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 5px 5px 15px #333;
-    cursor: pointer;
-    transition: .5s all;
 }
-/* header content-inner title code start  */
-header .content-inner .title{
-    display: block;
-    position: relative;
-    margin-top: 5rem;
-    padding-top: 3rem;
-    padding-left: 2rem;
-    z-index: 10;
-}
-header .content-inner .title::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    width: 52%;
-    height: 100%;
-    background-color: #E7BC0B;
-    z-index: -10;
-}
-header .content-inner .title::before{
-    position: absolute;
-    content: '';
-    bottom: 0;
-    right: 0;
-    width: 6%;
-    height: 50%;
-    background-color: #000;
-    z-index: -5;
-}
-header .content-inner .title h1{
-    position: relative;
-    padding-top: 3rem;
-    font-size: 4rem;
-    color: #000;
-    font-weight: 500;
-    line-height: .7;
-    text-transform: uppercase;
-}
-header .content-inner .title span{
-    display: block;
-    font-size: 14px;
-    line-height: 3;
-    text-transform: capitalize;
-}
-/* .content-inner log code start  */
-.log h6{
-    display: block;
-    margin: 0;
-    padding: 0;
-    color: #000;
-    font-weight: 500;
-    letter-spacing: .1em;
-}
-.log p{
-    color: #777777;
-    font-size: 14px;
+header .type-text h2{
+    color: rgb(230, 230, 230);
+    font-size: 1.8rem;
     line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
-.log a{
-    display: inline-block;
-    color: #777777;
-    font-size: 14px;
-    line-height: 0;
-    padding-bottom: 10px;
-    transition: .5s all;
-}
-.log a:hover{
-    color: rgb(116, 6, 66);
-}
-/* content-blog code start  */
-header .content-inner .content-blog{
-    padding-top: 5rem;
-    padding-left: 2rem;
-    display: block;
+header .type-text h2 span{
     position: relative;
-    z-index: 10;
-}
-header .content-inner .content-blog::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
+    overflow: hidden;
+    color: transparent;
     width: 100%;
     height: 100%;
-    background-color: #E7BC0B;
-    z-index: -10;
+    font-size: 4rem;
+    font-weight: 700;
+    /* -webkit-text-stroke: 1.5px #7e5d21; */
+    letter-spacing: 0.001em;
+    display: flex;
+    justify-content: center;
 }
-header .content-inner .content-blog::before{
+header .type-text p{
+    color: rgb(230, 230, 230);
+    font-size: 1.5rem;
+    line-height: 1;
+    text-transform: capitalize;
+}
+header .type-text span::before{
     position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    width: 5%;
-    height: 40%;
-    background-color: #000;
-    z-index: -5;
+    content: attr(text);
+    top: 0;
+    left: 20%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    color: #E7BC0B;
+    border-right: 4px solid rgb(230, 230, 230);
+    white-space: nowrap;
+    /* -webkit-text-stroke: 1.5px transparent; */
+    animation: type 5s linear forwards infinite;
+}
+header .type-text a{
+    display: inline-block;
+    margin: 30px;
+    padding: 15px 35px;
+    background: #E7BC0B;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: .5s all;
+    border: 1px solid transparent;
+}
+header .type-text a:hover{
+    color: #E7BC0B;
+    background: transparent;
+    border: 1px solid #E7BC0B;
+}
+/* scroll icon animation  */
+header .type-text i{
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 5px;
+    background-color: rgba(188, 206, 26, 0.2);
+    animation: scroll-down 2s linear infinite;
+}
+@keyframes scroll-down{
+    0%{
+        bottom: -20%;
+    }
+    100%{
+        bottom: -30%;
+    }
+}
+/* type-text animation code  */
+@keyframes type{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 61.5%;
+    }
+}
+/* Responsive devices screen code  */
+@media (max-width: 490px) {
+    header .type-text h2{
+        font-size: 1rem;
+    }
+    header .type-text h2 span{
+        font-size: 2rem;
+    }
+    header .type-text p{
+        font-size: .9rem;
+    }
+    header .type-text a{
+        font-size: .9rem;
+        padding: 8px 16px;
+    }
+    header .type-text i{
+        font-size: 14px;
+    }
+    @keyframes type{
+        0%{
+            width: 0%;
+        }
+        100%{
+            /* left: 0; */
+            width: 75%;
+        }
+    }
+}
+/* medium device screen code  */
+@media (min-width:491px) and (max-width: 760px) {
+    header .type-text h2{
+        font-size: 1rem;
+    }
+    header .type-text h2 span{
+        font-size: 2rem;
+    }
+    header .type-text p{
+        font-size: .9rem;
+    }
+    header .type-text a{
+        font-size: .9rem;
+        padding: 8px 16px;
+    }
+    header .type-text i{
+        font-size: 14px;
+    }
+    @keyframes type{
+        0%{
+            width: 0%;
+        }
+        100%{
+            /* left: 0; */
+            width: 67%;
+        }
+    }
+}
+/* large device screen code  */
+@media (min-width:761px) and (max-width: 990px) {
+    header .type-text h2{
+        font-size: 1.2rem;
+    }
+    header .type-text h2 span{
+        font-size: 2.5rem;
+    }
+    header .type-text p{
+        font-size: 1rem;
+    }
+    header .type-text a{
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    header .type-text i{
+        font-size: 16px;
+    }
+    @keyframes type{
+        0%{
+            width: 0%;
+        }
+        100%{
+            /* left: 0; */
+            width: 62%;
+        }
+    }
+}
+/* Extra large screen device code  */
+@media (min-width:991px) and (max-width: 1190px) {
+    @keyframes type{
+        0%{
+            width: 0%;
+        }
+        100%{
+            /* left: 0; */
+            width: 76%;
+        }
+    }
 }
 /* ====header section code end====  */
