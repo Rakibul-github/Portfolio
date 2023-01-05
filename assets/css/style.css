@@ -195,7 +195,8 @@ header .type-text a{
     margin: 30px;
     padding: 15px 35px;
     background: #E7BC0B;
-    color: #fff;
+    color: #333;
+    font-weight: 500;
     font-size: 1.2rem;
     transition: .5s all;
     border: 1px solid transparent;
@@ -330,3 +331,98 @@ header .type-text i{
     }
 }
 /* ====header section code end====  */
+
+/* ====about section code start====  */
+
+/* about  section title code start  */
+.about .title h3{
+    display: inline-block;
+    background: #E7BC0B;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+.about .title h2{
+    color: #333;
+    font-size: 2rem;
+}
+/* about-content code start  */
+.about .about-content h3{
+    color: #333;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.about .about-content span{
+    display: inline-block;
+    color: #222;
+    font-weight: 700;
+    border-bottom: 2px solid #E7BC0B;
+}
+.about .about-content p{
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+    line-height: 2;
+}
+/* experience code start  */
+.about .experience h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: #444;
+}
+.about .experience h2::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #E7BC0B;
+    border-radius: 50%;
+    z-index: -1;
+}
+.about .experience h3{
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+.about .experience span{
+    display: inline-block;
+    color: #222;
+    font-weight: 600;
+}
+/* small devices screen ratio code  */
+@media (max-width:991px) {
+    .about .about-content h3{
+        text-align: center;
+    }
+    .about .about-content p{
+        text-align: center;
+    }
+}
+/* about details code start  */
+.about .details span{
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.about .details p{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.about .details a{
+    display: inline-block;
+    overflow: hidden;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: .5s all;
+}
+.about .details a:hover{
+    text-decoration: none;
+}
+/* ====about section code end====  */
