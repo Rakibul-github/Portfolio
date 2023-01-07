@@ -426,3 +426,58 @@ header .type-text i{
     text-decoration: none;
 }
 /* ====about section code end====  */
+
+/* ====support section code start====  */
+/* support  section title code start  */
+.support{
+    background-color: #E5E5E5;
+}
+.support .title h3{
+    display: inline-block;
+    background: #E7BC0B;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+.support .title h2{
+    color: #333;
+    font-size: 2rem;
+}
+/* support-content-block code start  */
+.support .support-content-block span i{
+    display: inline-block;
+    font-size: 4rem;
+    color: #E7BC0B;
+    margin-bottom: 1rem;
+    transition: .5s all;
+}
+.support .support-content-block h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px 0;
+    color: #333;
+}
+.support .support-content-block h2 span{
+    color: #0be70b;
+}
+.support .support-content-block p{
+    color: #444;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.support .support-content-block{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    
+    transition: .5s linear all;
+}
+.support .support-content-block:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 5px #999,
+    0 0 10px #999;
+}
+.support .support-content-block:hover span i{
+    transform: rotate(360deg);
+}
+/* ====support section code end====  */
