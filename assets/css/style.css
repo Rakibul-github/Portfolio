@@ -430,7 +430,7 @@ header .type-text i{
 /* ====support section code start====  */
 /* support  section title code start  */
 .support{
-    background-color: #E5E5E5;
+    background-color: #f8f9fa;
 }
 .support .title h3{
     display: inline-block;
@@ -466,18 +466,47 @@ header .type-text i{
 }
 .support .support-content-block{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 2rem 1.5rem 1rem 1.5rem;
     margin-bottom: 1.5rem;
-    
+    transform: scale(1);
     transition: .5s linear all;
 }
 .support .support-content-block:hover{
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 5px #999,
     0 0 10px #999;
-}
-.support .support-content-block:hover span i{
-    transform: rotate(360deg);
+    transform: scale(1.05);
 }
 /* ====support section code end====  */
+
+/* ====Resume section code start====  */
+/* support  section title code start  */
+.resume .title h3{
+    display: inline-block;
+    background: #E7BC0B;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 1rem;
+}
+.resume .title h2{
+    color: #333;
+    font-size: 2rem;
+}
+/* education-block code start  */
+.resume .education-body{
+    position: relative;
+}
+.resume .education-body::before{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #E7BC0B;
+}
+.resume .education-body p{
+    color: #666;
+}
+/* ====Resume section code end====  */
