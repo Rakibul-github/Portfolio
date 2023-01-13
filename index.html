@@ -20,7 +20,7 @@
 </head>
 <body>
   <!-- navbar section code start  -->
-    <section class="nav-inner container-fluid">
+    <section class="nav-inner ">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
               <button class="navbar-toggler my-1" type="button" data-bs-toggle="collapse" data-bs-target="#toggle" >
@@ -42,16 +42,16 @@
                     <a class="nav-link" href="#skill">Skill</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">My Work</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                 </ul>
                 <div class="socials-link d-flex justify-content-center gap-2">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                 </div>
               </div>
             </div>
@@ -66,11 +66,11 @@
             <div class="header-content py-5">
               <div class="type-text mt-5  text-center">
                 <h2>
-                  Hey! I'm a freelancer
-                  <span text="Fontend Developer">Fontend Developer</span>
+                  Hey! I'm a freelancer</br>
+                  <span class="typing"></span>
                 </h2>
                 <p>based in Dhaka, Bangladesh.</p>
-                <a href="#">View My Works</a>
+                <a href="#portfolio">View My Works</a>
                 <i class="fa-solid fa-arrow-down"></i>
               </div>
             </div>
@@ -195,8 +195,8 @@
       </div><!--single line end-->
       <div class="col-12 col-md-6 col-lg-4">
         <div class="support-content-block text-center">
-          <span><i class="fa-brands fa-square-js"></i></span>
-          <h2>Java Script</h2>
+          <span><i class="fa-regular fa-snowflake"></i></span>
+          <h2>Brand Identity</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt reprehenderit rem voluptatem alias nam.
           </p>
@@ -356,6 +356,11 @@
               </div>
             </div>
           </div><!--single bar end-->
+          <div class="col-12">
+            <div class="cv text-center justify-content-center pt-5">
+              <a href="#" download>Download CV</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -364,7 +369,7 @@
 <!-- ====Resume section end====  -->
 
 <!--====Portfolio Section code start====-->
-<section class="portfolio py-5">
+<section id="portfolio" class="portfolio py-5">
   <section class="container">
     <div class="row">
       <div class="col-8 offset-2">
@@ -374,13 +379,136 @@
         </div>
       </div>
     </div>
+    <!-- nav-tabs code start  -->
+    <div class="row">
+      <div class="col-8 offset-2">
+        <div class="tabs">
+          <ul class="nav nav-pills mb-3 justify-content-center gap-4" id="pills-tab">
+            <li class="nav-item">
+              <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#all-works" type="button">All Works</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#responsive" type="button">Responsive</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#animation" type="button">Animation</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#graphic" type="button">Graphics</button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#latest" type="button">Latest</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- nav-tabs inner code  -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="all-works">
+        <div class="row my-3 g-4">
+          <div class="col-6 col-md-3">
+            <div class="box">
+              <img src="assets/image/animation-work1.jpg" title="
+              Responsive-Portfolio-Web-Template" alt="
+              Responsive-Portfolio-Web-Template">
+              <div class="box-inner">
+                <span><a href="https://rakibul-github.github.io/Responsive-Portfolio-Web-Template/" target="_blank">Preview</a></span>
+                <span><a href="https://github.com/Rakibul-github/Responsive-Portfolio-Web-Template" target="_blank">Get Code</a></span>
+              </div>
+            </div>
+          </div><!--single item end-->
+          <div class="col-6 col-md-3">
+            <div class="box">
+              <img src="assets/image/animation-work1.jpg" title="Academia-2nd-formative-assesment-template" alt="Academia-2nd-formative-assesment-template">
+              <div class="box-inner">
+                <span><a href="https://rakibul-github.github.io/Academia-2nd-formative-assesment-template-with-flex-layout-system/" target="_blank">Preview</a></span>
+                <span><a href="https://github.com/Rakibul-github/Academia-2nd-formative-assesment-template-with-flex-layout-system" target="_blank">Get Code</a></span>
+              </div>
+            </div>
+          </div><!--single item end-->
+          <div class="col-6 col-md-3">
+            <div class="box">
+              <img src="assets/image/animation-work1.jpg" title="
+              Onu-Advance-Responsive-Web-Template
+              " alt="
+              Onu-Advance-Responsive-Web-Template
+              ">
+              <div class="box-inner">
+                <span><a href="https://rakibul-github.github.io/Onu-Advance-Responsive-Web-Template/" target="_blank">Preview</a></span>
+                <span><a href="https://github.com/Rakibul-github/Onu-Advance-Responsive-Web-Template" target="_blank">Get Code</a></span>
+              </div>
+            </div>
+          </div><!--single item end-->
+          <div class="col-6 col-md-3">
+            <div class="box">
+              <img src="assets/image/animation-work1.jpg" title="Medi-Herbal-Template" alt="Medi-Herbal-Template">
+              <div class="box-inner">
+                <span><a href="https://rakibul-github.github.io/Medi-Herbal-Template/
+                  " target="_blank">Preview</a></span>
+                <span><a href="https://github.com/Rakibul-github/Medi-Herbal-Template" target="_blank">Get Code</a></span>
+              </div>
+            </div>
+          </div><!--single item end-->
+          <div class="col-6 col-md-3">
+            <div class="box">
+              <img src="assets/image/animation-work1.jpg" title="
+              Medinova Template" alt="
+              Medinova Template">
+              <div class="box-inner">
+                <span><a href="https://rakibul-github.github.io/Medinova/
+                  " target="_blank">Preview</a></span>
+                <span><a href="https://github.com/Rakibul-github/Medinova" target="_blank">Get Code</a></span>
+              </div>
+            </div>
+          </div><!--single item end-->
+          <div class="col-6 col-md-3">
+            <div class="box">
+              <img src="assets/image/animation-work1.jpg" title="
+              Kid-Kinder-website-template" alt="Kid-Kinder-website-template">
+              <div class="box-inner">
+                <span><a href="https://rakibul-github.github.io/Kid-Kinder-website-template/
+                  " target="_blank">Preview</a></span>
+                <span><a href="https://github.com/Rakibul-github/Kid-Kinder-website-template" target="_blank">Get Code</a></span>
+              </div>
+            </div>
+          </div><!--single item end-->
+          <div class="col-6 col-md-3">
+            <div class="box">
+              <img src="assets/image/animation-work1.jpg" title="
+              Mundana-web-template-" alt="
+              Mundana-web-template-">
+              <div class="box-inner">
+                <span><a href="https://rakibul-github.github.io/Mundana-web-template-/" target="_blank">Preview</a></span>
+                <span><a href="https://github.com/Rakibul-github/Mundana-web-template-" target="_blank">Get Code</a></span>
+              </div>
+            </div>
+          </div><!--single item end-->
+          <div class="col-6 col-md-3">
+            <div class="box">
+              <img src="assets/image/animation-work1.jpg" title="
+              Simple-Template-with-HTML-CSS" alt="
+              Simple-Template-with-HTML-CSS">
+              <div class="box-inner">
+                <span><a href="https://rakibul-github.github.io/Simple-Template-with-HTML-CSS/" target="_blank">Preview</a></span>
+                <span><a href="https://github.com/Rakibul-github/Simple-Template-with-HTML-CSS" target="_blank">Get Code</a></span>
+              </div>
+            </div>
+          </div><!--single item end-->
+        </div>
+      </div>
+    </div><!--single block end-->
   </section>
 </section>
 <!--====Portfolio Section code end====-->
 
     <!-- bootstrap js link  -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- type.js plug in code link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <!-- typed.js code  -->
+    <script src="assets/js/typed.js" type="text/javascript"></script>
     <!-- custom js link  -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 </html>
