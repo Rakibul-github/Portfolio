@@ -115,6 +115,7 @@ img{
     color: #fff;
     transition: .5s all;
 }
+/* navbar hover code  */
 .navbar .nav-link:focus, .nav-link:hover {
     color: var(--bs-nav-link-hover-color);
 }
@@ -217,10 +218,18 @@ header .type-text a:hover{
     background: transparent;
     border: 1px solid #E7BC0B;
 }
-/* scroll icon animation  */
-header .type-text i{
+/* scroll-down code  */
+header .header-content
+{
+    position: relative;
+}
+header .header-content .scroll-down a{
+    display: inline-block;
+}
+/* scroll-down  icon animation  */
+header .header-content .scroll-down i{
     position: absolute;
-    bottom: -20%;
+    bottom: 0%;
     left: 50%;
     color: #fff;
     font-size: 1.5rem;
@@ -230,10 +239,10 @@ header .type-text i{
 }
 @keyframes scroll-down{
     0%{
-        bottom: -30%;
+        bottom: -5%;
     }
     100%{
-        bottom: -40%;
+        bottom: -12%;
     }
 }
 /* Responsive devices screen code  */
@@ -621,6 +630,8 @@ header .type-text i{
 
 /* ====portfolio section start====  */
 .portfolio{
+    position: relative;
+    overflow: hidden;
     background: #f8f9fa;
 }
 .portfolio .title h3{
@@ -755,11 +766,108 @@ header .type-text i{
     background-color: #E7BC0B;
     padding: 3px 15px;
     border-radius: 4px;
+    border: 1px solid transparent;
     transition: .5s all;
 }
 .portfolio .box:hover .box-inner a:hover{
-    color: #fff;
+    color: #E7BC0B;
+    background-color: transparent;
+    border: 1px solid #E7BC0B;
 }
-/* ====table content code end====  */
-
 /* ====portfolio section start====  */
+
+/* ====Hire section code start====  */
+.hire{
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url(../image/hire-background.jpg) no-repeat fixed;
+    background-size: cover;
+    
+}
+/* blur code  */
+.hire .blur{
+    backdrop-filter: blur(3px);
+}
+/* hire-inner code */
+.hire .hire-inner h2
+{
+    color: #dde1e7;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+/* hire-link code  */
+.hire .hire-inner .hire-link span a
+{
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+    padding: 10px 25px;
+    border-radius: 4px;
+    transition: .5s all;
+    border: 1px solid transparent;
+}
+.hire .hire-inner .hire-link span a:hover
+{
+    color: var(--main-color);
+    background: transparent;
+    border: 1px solid var(--main-color);
+}
+/* ====Hire section code start====  */
+
+/* ====Questions section code start====  */
+.questions{
+    background: #f8f9fa;
+}
+/* questions title code start  */
+.questions .title h3{
+    display: inline-block;
+    background: #E7BC0B;
+    color: #111;
+    padding: 5px 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.questions .title h2{
+    color: #222;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+/* questions inner code start  */
+.questions .questions-inner ul
+{
+    padding-left: 0;
+    margin-left: 0;
+}
+.questions .questions-inner ul li
+{
+    border-bottom: 1px solid #999;
+}
+.questions .questions-inner ul li:last-child
+{
+    border-bottom: none;
+}
+/* .questions .questions-inner ul li button code start */
+.questions .questions-inner ul li button
+{
+    text-align: left;
+    background-color: transparent;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    padding: 15px ;
+}
+.questions .questions-inner ul li button span i{
+    margin-right: 5px;
+}
+.questions .questions-inner ul li p
+{
+    color: #555;
+    margin-left: 30px;
+    padding-left: 15px;
+}
+/* ====Questions section code end====  */
