@@ -13,15 +13,5 @@ var typed = new Typed('.typing', {
   cursorChar: '|',
   autoInsertCss: true,
   });
-// element show hide js code 
-  
-  // function myFunction(){
-  //   var x = document.getElementById('text');
-  //   if(x.style.display === 'none'){
-  //     x.style.display = 'block';
-  //   }
-  //   else
-  //   {
-  //     x.style.display = 'none';
-  //   }
-  // }
+// wow js active code 
+new WOW().init();

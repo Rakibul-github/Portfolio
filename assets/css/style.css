@@ -518,6 +518,7 @@ header .header-content .scroll-down i{
     z-index: 10;
     transform: rotate(calc(3.6deg * var(--num)));
     animation: dott 2s linear forwards ;
+    animation-delay: 1s;
 }
 .resume .skill-block .progress-bar .percent .circle .dot::before{
     position: absolute;
@@ -565,7 +566,7 @@ header .header-content .scroll-down i{
     stroke-linecap: round;
     opacity: 0;
     animation: fadein 1s linear forwards ;
-    animation-delay: 2s;
+    animation-delay: 3s;
 }
 @keyframes fadein{
     0%{
@@ -585,7 +586,7 @@ header .header-content .scroll-down i{
     flex-direction: column;
     opacity: 0;
     animation: fadein 1s linear forwards ;
-    animation-delay: 2s;
+    animation-delay: 3s;
 }
 .resume .skill-block .progress-bar .text h3{
     display: flex;
@@ -878,7 +879,9 @@ header .header-content .scroll-down i{
 {
     background: var(--main-color);
 }
-.contact .address h2
+/* contact address code  */
+.contact .address h2,
+.contact .submit h2
 {
     margin-bottom: 2rem;
     color: #222;
@@ -937,8 +940,8 @@ header .header-content .scroll-down i{
     display: inline-block;
     color: #fff;
     background-color: #111418;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     letter-spacing: .1rem;
     padding: 8px 25px;
     border-radius: 4px;
