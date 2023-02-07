@@ -911,9 +911,11 @@ header .header-content .scroll-down i{
     font-size: 1.2rem;
     line-height: 1.8;
     transition: .5s all;
+    text-decoration: underline;
 }
 .contact .address a:hover{
     color: #000;
+    text-decoration: none;
 }
 /* submit section code start  */
 .contact .submit form label
